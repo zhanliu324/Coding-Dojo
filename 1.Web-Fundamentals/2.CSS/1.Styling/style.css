@@ -1,0 +1,26 @@
+body {
+    font-family: cursive;
+}
+
+h1 {
+    text-align: left;
+    color: white;
+    background-color: black;
+}
+
+.cloud {
+    color: aqua;
+}
+
+h2 {
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+h3 {
+    background-color: cornflowerblue;
+    text-align: right;
+    text-decoration: underline;
+}
