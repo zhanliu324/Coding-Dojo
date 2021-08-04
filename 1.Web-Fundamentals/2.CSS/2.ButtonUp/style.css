@@ -1,0 +1,31 @@
+button {
+    font-family: sans-serif;
+}
+
+.search {
+    color: green;
+    width: 125px;
+    height: 25px;
+    border: 1px solid green;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.plus {
+    color: white;
+    background-color: green;
+    width: 25px;
+    height: 25px;
+    border: transparent;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.create {
+    color: white;
+    background-color: blue;
+    width: 150px;
+    height: 30px;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+}
