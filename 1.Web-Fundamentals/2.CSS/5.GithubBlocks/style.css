@@ -1,0 +1,39 @@
+.wrapper {
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+h1, p {
+    text-align: center;
+}
+
+img {
+    height: 200px;
+}
+
+.blue {
+    background-color: skyblue;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pink {
+    background-color: pink;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.white {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
