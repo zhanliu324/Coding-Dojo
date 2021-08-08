@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.user-circle {
+    height: 100px;
+}
+
+.icon {
+    height: 25px;
+}
+
+.top-bar {
+    background-color: darkcyan;
+    height: 100px;
+}
+
+.info {
+    padding: 60px 20px 20px 20px;
+    border-left: solid lightgrey 5px;
+    border-right: solid lightgrey 5px;
+    border-bottom: solid lightgrey 5px;
+}
+
+.user-circle {
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+
+.location, .edit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.intro {
+    margin:10px 0px;
+}
