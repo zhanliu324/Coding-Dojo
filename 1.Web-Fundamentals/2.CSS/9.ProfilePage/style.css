@@ -1,25 +1,30 @@
 * {
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
-    color: white;
 }
+
 .nav {
     display: flex;
-    padding: 0px 20px;
+    padding: 20px 10%;
     background-color: darkslategray;
     align-items: center;
     justify-content: space-between;
+    color: white;
 }
 .nav-left {
     display: flex;
 }
 .nav-links {
     display: flex;
+    margin-left: 2em;
     align-items: center; 
     list-style: none;
     gap: 2em;
 }
-a {
+.nav-links a {
     text-decoration: none;  
+    color: white;
 }
 .active {
     font-weight: bold;
@@ -29,5 +34,105 @@ a {
     padding: 4px 10px;
     border: solid black;
     box-shadow: 2px 2px black;
+    color: white;
 }  
 
+.main {
+    display: flex;
+    padding: 0px 10%;
+    margin: 20px auto;
+}
+
+.main-left {
+    flex: 2;
+    margin-right: 20px;
+}
+
+
+.icon {
+    height: 25px;
+}
+.user-card {
+    margin-bottom: 20px;
+}
+.user-card .top-bar {
+    background-color: darkcyan;
+    height: 100px;
+}
+.user-intro {
+    padding: 60px 20px 20px 20px; 
+    border-left: solid lightgrey 5px;
+    border-right: solid lightgrey 5px;
+    border-bottom: solid lightgrey 5px;
+}
+.user-circle {
+    height: 100px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: darkgrey;
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+.location, .edit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.intro {
+    margin:10px 0px;
+}
+
+.main-right {
+    flex: 1;
+    /* height: 200px; */
+}
+
+
+.bar {
+    background-color: darkslategray;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.bar > h3 {
+    color: white;
+}
+.content {
+    padding: 10px 20px; 
+    border-left: solid lightgrey 5px;
+    border-right: solid lightgrey 5px;
+    border-bottom: solid lightgrey 5px;
+}
+.requests .content {
+    display: flex;
+    justify-content: space-between;
+}
+.date {
+    color: darkgrey;
+    margin: 5px 0px 10px 0px;
+}
+
+.number {
+    background-color: lightgray;
+    padding: 5px 10px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.requests {
+    margin-bottom: 20px;
+}
+
+.photo-s {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.request-button img {
+    height: 30px;
+}
+
+td {
+    padding: 0px 10px 0px 0px;
+}
