@@ -1,3 +1,7 @@
-function logout(element) {
-    element.innerText = "Logout"
+function login(element) {
+    if (element.innerText == "Login") {
+        element.innerText = "Logout"
+    } else {
+        element.innerText = "Login"
+    }
 }
