@@ -85,7 +85,6 @@
 
 .main-right {
     flex: 1;
-    /* height: 200px; */
 }
 
 
@@ -105,11 +104,7 @@
     border-right: solid lightgrey 5px;
     border-bottom: solid lightgrey 5px;
 }
-.requests .content {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 10px 10px 20px;
-}
+
 .date {
     color: darkgrey;
     margin: 5px 0px 10px 0px;
@@ -123,6 +118,18 @@
 }
 .requests {
     margin-bottom: 20px;
+}
+
+.user-line {
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.start, .end {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .photo-s {
