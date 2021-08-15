@@ -30,11 +30,6 @@
 .user {
     border: solid black 3px;
     padding: 10px 20px;
-}
-
-.user > * {
-    display: block;
-    margin: 0 auto;
     text-align: center;
 }
 
