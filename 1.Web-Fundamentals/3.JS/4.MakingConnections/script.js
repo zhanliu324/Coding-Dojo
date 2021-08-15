@@ -5,8 +5,6 @@ var requestLines = [
 
 var requestNum = document.querySelector("#request-num")
 var connectNum = document.querySelector("#connect-num")
-var requests = 2
-var connections = 418
 
 function changeName() {
     document.querySelector("#user-name").innerText = "Name Changed"
@@ -14,14 +12,11 @@ function changeName() {
 
 function accept(idx) {
     requestLines[idx].remove(),
-    requests -= 1,
-    requestNum.innerText = requests,
-    connections += 1,
-    connectNum.innerText = connections
+    requestNum.innerText--,
+    connectNum.innerText++
 }
 
 function decline(idx) {
     requestLines[idx].remove(),
-    requests -= 1,
-    requestNum.innerText = requests
+    requestNum.innerText--
 }
