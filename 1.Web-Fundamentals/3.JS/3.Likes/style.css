@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    color: white;
+    background-color: black;
+    margin:0px 10%;
+    padding: 10px 20px;
+}
+
+#title {
+    margin: 10px 10%;
+    text-align: center;
+}
+
+.content {
+    margin: 0 10%;
+    display: flex;
+    gap: 20px;
+}
+
+.col-1 {
+    flex: 1;
+
+}
+
+.user {
+    border: solid black 3px;
+    padding: 10px 20px;
+}
+
+.user > * {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.col-2 {
+    flex: 3;
+}
+
+.connection {
+    border: solid black 3px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.connection > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background-color: yellow;
+    border: solid black 3px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    box-shadow: black 3px 3px;
+}

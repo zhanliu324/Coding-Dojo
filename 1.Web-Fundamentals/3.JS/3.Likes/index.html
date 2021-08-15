@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 id='header'>Network</h1>
+    <h1 id='title'>Your Feed</h1>
+    <div class="content">
+        <div class="col-1">
+            <div class="user">
+                <img src="images/user.png" alt="user-image">
+                <p><a href="#">Add an avatar</a></p>
+                <h1 id="user-name">James Doe</h1>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="connection">
+                <div>
+                    <h1>Neil M</h1>
+                    <div>
+                        <span id="neil-m">0 like(s)</span>
+                        <button class='btn'  onclick="likeNeil()">Like</button>
+                    </div>
+                </div>
+                <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+            </div>
+            <div class="connection">
+                <div>
+                    <h1>Nichole K</h1>
+                    <div>
+                        <span id="nichole-k">0 like(s)</span>
+                        <button class='btn' onclick="likeNichole()">Like</button>
+                    </div>
+                </div>
+                <p>Just finished my <a href="#">next comic</a>, check it out</p>
+            </div>
+            <div class="connection">
+                <div>
+                    <h1>Jim R</h1>
+                    <div>
+                        <span id="jim-r">0 like(s)</span>
+                        <button class="btn" onclick="likeJim()">Like</button>
+                    </div>
+                </div>
+                <p>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
