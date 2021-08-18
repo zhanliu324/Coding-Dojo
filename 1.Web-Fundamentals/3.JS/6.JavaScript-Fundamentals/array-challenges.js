@@ -58,7 +58,8 @@ function reverse(arr) {
     for (var i=0; i<arr.length; i++) {
         arr2[i] = arr[arr.length - 1 -i]
     }
-    return arr2;
+    arr = arr2;
+    return arr;
 }
 var result = reverse(["a", "b", "c", "d", "e"]);
 console.log(result); // we expect back ["e", "d", "c", "b", "a"]
