@@ -53,7 +53,7 @@ def iterateDictionary2(key_name, list):
 # Create a function printInfo(some_dict) that given a dictionary whose values are all lists, prints the name of each key along with the size of its list, and then prints the associated values within each key's list.
 def printInfo(dict):
     for key, list in dict.items():
-        print(f"{len(list)} {key.upper()}")
+        print(f"\n{len(list)} {key.upper()}")
         for v in list:
             print(v)
 # dojo = {
