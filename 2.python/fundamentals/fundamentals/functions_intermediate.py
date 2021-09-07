@@ -39,6 +39,7 @@ def iterateDictionary(list):
         for key, value in dict.items():
             student.append(f"{key} - {value}")
         print(", ".join(student))
+
 # iterateDictionary(students)
 
 
@@ -61,3 +62,4 @@ def printInfo(dict):
 #    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
 # }
 # printInfo(dojo)
+
