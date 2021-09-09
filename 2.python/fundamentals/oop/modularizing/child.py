@@ -5,3 +5,5 @@ user = parent.User("Tom")
 print(user.name)
 print(user.say_hello())
 print(parent.local_val)
+
+print(locals())
