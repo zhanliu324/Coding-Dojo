@@ -1,4 +1,4 @@
-import pet
+from pet import Pet
 
 class Ninja:
     def __init__(self, first_name, last_name, treats, pet_food, pet):
@@ -20,7 +20,7 @@ class Ninja:
         self.pet.noise()
         return self
 
-pet1 = pet.Pet("Yuki", "Cat", "Catch a ball", "Nyan Nyan")
+pet1 = Pet("Yuki", "Cat", "Catch a ball", "Nyan Nyan")
 ninja1 = Ninja("Hanzo", "Hasashi", "Beef", "Fish", pet1)
 
 ninja1.feed()
@@ -30,7 +30,7 @@ ninja1.walk()
 print(f"Ninja: {ninja1.first_name} {ninja1.last_name}, Pet: {ninja1.pet.name}\nHeath is {ninja1.pet.health}, Energy is {ninja1.pet.energy}")
 
 
-class Dog(pet.Pet):
+class Dog(Pet):
     def __init__(self, name, gender, tricks, noise, health = 100, energy = 100):
         super().__init__(name, 'Dog', tricks, noise, health, energy)
         self.gender = gender
