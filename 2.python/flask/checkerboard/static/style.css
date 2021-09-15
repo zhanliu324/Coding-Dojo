@@ -1,0 +1,14 @@
+#header {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    height: 100px;
+    width: 100px;
+}
