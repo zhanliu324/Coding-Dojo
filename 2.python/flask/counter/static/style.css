@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    padding: 5px 10px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+#plus1 {
+    background-color: blue;
+}
+
+#reset {
+    background-color: red;
+}
+
+#plus2 {
+    background-color: green;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
