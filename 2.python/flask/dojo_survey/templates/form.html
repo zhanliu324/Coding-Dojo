@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <style>
+        p {
+            margin:0
+        }
+    </style>
+    <title>Dojo Survey</title>
+</head>
+<body style="display: flex; justify-content: center; padding: 10px;">
+    <form action="/process" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" name='name' id='name'>
+        <p>Gender:</p>
+        <input type="radio" name='gender' id='male' value='Male'>
+        <label for="male">Male</label>
+        <input type="radio" name='gender' id='female' value='Female'>
+        <label for="male">Female</label>
+        <input type="radio" name='gender' id='not to say' value='Prefer not to say'>
+        <label for="not to say">Prefer not to say</label>
+        <label for="location" style="display: block;">Dojo Location:</label>
+        <select name="location" id="location">
+            <option value="Bellevue">Bellevue, WA</option>
+            <option value="Boise">Boise, ID</option>
+            <option value="Chicago">Chicago, IL</option>
+            <option value="los Angeles">Los Angeles, CA</option>
+            <option value="Silicon Valley">Silicon Valley, CA</option>
+        </select>
+        <p>What language(s) do you want to learn?</p>
+        <input type="checkbox" name='language1' id='language1' value='HTML'>
+        <label for="language1">HTML</label>
+        <input type="checkbox" name='language2' id='language2' value='JavaScript'>
+        <label for="language1">JavaScript</label>
+        <input type="checkbox" name='language3' id='language3' value='Python'>
+        <label for="language1">Python</label>
+        <input type="checkbox" name='language4' id='language4' value='Java'>
+        <label for="language1">Java</label>
+        <label for="comment" style="display: block;">Comment (optional):</label>
+        <textarea name="comment" id="comment" cols="40" rows="3"></textarea>
+        <input type="submit" value='Submit' style="display: block;" class='btn btn-success'>
+    </form>
+</body>
+</html>
