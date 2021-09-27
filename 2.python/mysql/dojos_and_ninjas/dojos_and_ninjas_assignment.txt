@@ -1,0 +1,39 @@
+SET SQL_SAFE_UPDATES = 0;
+
+insert into dojos_and_ninjas_schema.dojos (name, created_at, updated_at)
+values
+('Tokyo', now(), now()),
+('Kyoto', now(), now()),
+('Nagoya', now(), now());
+
+delete from dojos;
+
+insert into dojos_and_ninjas_schema.dojos (name, created_at, updated_at)
+values
+('Tokyo', now(), now()),
+('Kyoto', now(), now()),
+('Nagoya', now(), now());
+
+insert into dojos_and_ninjas_schema.ninjas (first_name, last_name, age, dojo_id, created_at, updated_at)
+values
+('A1', 'B1', 18, 4, now(), now()),
+('A2', 'B2', 19, 4, now(), now()),
+('A3', 'B3', 20, 4, now(), now()),
+('C1', 'D1', 18, 5, now(), now()),
+('C2', 'D2', 19, 5, now(), now()),
+('C3', 'D3', 20, 5, now(), now()),
+('E1', 'F1', 18, 6, now(), now()),
+('E2', 'F2', 19, 6, now(), now()),
+('E3', 'F3', 20, 6, now(), now());
+
+select *
+from ninjas 
+where dojo_id = 4;
+
+select *
+from ninjas 
+where dojo_id = 6;
+
+select dojos.*, ninjas.*
+from dojos join ninjas on dojos.id=ninjas.dojo_id
+where ninjas.id = 9;
