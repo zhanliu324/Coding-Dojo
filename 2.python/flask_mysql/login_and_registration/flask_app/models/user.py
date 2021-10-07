@@ -61,12 +61,10 @@ class User:
     @staticmethod
     def validate_user(user):
         is_valid = True
-        query = "select * from users where email = %(email)s;"
-        result = connectToMySQL('users_schema').query_db(query, user)
         if not EMAIL_REGEX.match(user['email']):
             flash("Invalid email address!", 'register')
             is_valid = False
-        if len(result) >= 1:
+        if User.get_by_email(user):
             flash('Email already existed. Please use another one.', 'register')
             is_valid = False
         if len(user['first_name']) < 2:
