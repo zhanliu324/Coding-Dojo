@@ -1,5 +1,5 @@
 from flask_app.config.mysqlconnection import connectToMySQL
-db_name = 'users_schema'
+db_name = 'recipes_schema'
 import re
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
 from flask import flash
